@@ -46,24 +46,24 @@ const locations = {
   current: ["current", [0, 0]], // Placeholder for current location
 };
 
-const findNearestVertex = (currentPosition) => {
-  let nearestVertex = null;
-  let shortestDistance = Infinity;
+// const findNearestVertex = (currentPosition) => {
+//   let nearestVertex = null;
+//   let shortestDistance = Infinity;
 
-  for (const [key, [name, position]] of Object.entries(locations)) {
-    const distance = Math.sqrt(
-      Math.pow(position[0] - currentPosition[0], 2) +
-      Math.pow(position[1] - currentPosition[1], 2)
-    );
+//   for (const [key, [name, position]] of Object.entries(locations)) {
+//     const distance = Math.sqrt(
+//       Math.pow(position[0] - currentPosition[0], 2) +
+//       Math.pow(position[1] - currentPosition[1], 2)
+//     );
 
-    if (distance < shortestDistance) {
-      shortestDistance = distance;
-      nearestVertex = key;
-    }
-  }
-  console.log(nearestVertex)
-  return nearestVertex;
-};
+//     if (distance < shortestDistance) {
+//       shortestDistance = distance;
+//       nearestVertex = key;
+//     }
+//   }
+//   console.log(nearestVertex)
+//   return nearestVertex;
+// };
 
 const Map1 = () => {
   const [userPosition, setUserPosition] = useState(null);
