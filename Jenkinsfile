@@ -3,8 +3,7 @@ pipeline {
 
     environment {
         DOCKER_REGISTRY_CREDENTIALS = 'DockerHubCred'
-        DOCKER_IMAGE_NAME = '23subbhashit/spemajorf'
-        REACT_APP_PATH = '/mnt/c/Users/User/Desktop/spemajor/pathf'
+        DOCKER_IMAGE_NAME = 'aryanpatel111/spe_frontend'
     }
 
     stages {
@@ -23,20 +22,20 @@ pipeline {
 
         stage('Build React App') {
             steps {
-                dir('/mnt/c/Users/User/Desktop/spemajor/pathf') {
-                    sh '"/mnt/c/Program Files/nodejs/npm" install'
-                    sh '"/mnt/c/Program Files/nodejs/npm" run build'
-                }
+            
+                    sh 'npm install'
+                    sh 'npm run build'
+                
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                dir(REACT_APP_PATH) {
+                
                     script {
                         docker.build("${DOCKER_IMAGE_NAME}", '.')
                     }
-                }
+                
             }
         }
 
@@ -57,7 +56,7 @@ pipeline {
                     ansiblePlaybook(
                         playbook: 'ansibledeploy/deploy.yml',
                         inventory: 'ansibledeploy/inventory',
-                        sudoUser: 'subbhashit'
+                        sudoUser: 'aryanpatel'
                     )
                 }
             }
