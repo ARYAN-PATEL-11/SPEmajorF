@@ -15,7 +15,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [],
                     submoduleCfg: [],
-                    userRemoteConfigs: [[url: 'https://github.com/23subbhashit/SPEmajorF.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/ARYAN-PATEL-11/SPEmajorF.git']]
                 ])
             }
         }
