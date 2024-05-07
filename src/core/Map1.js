@@ -108,11 +108,11 @@ const Map1 = () => {
     if (start && end && userPosition) {
       let apiUrl = '';
       if (algorithm === 'dijkstra') {
-        apiUrl = `http://localhost:31976/dijkstra?start=${start}&end=${end}`;
+        apiUrl = `http://192.168.49.2:31976/dijkstra?start=${start}&end=${end}`;
       } else if (algorithm === 'bellmanford') {
-        apiUrl = `http://localhost:31738/bellmanford?start=${start}&end=${end}`;
+        apiUrl = `http://192.168.49.2:31738/bellmanford?start=${start}&end=${end}`;
       } else if (algorithm === 'astar') {
-        apiUrl = `http://localhost:31363/astar?start=${start}&end=${end}`;
+        apiUrl = `http://192.168.49.2:31363/astar?start=${start}&end=${end}`;
       }
 
       if (apiUrl) {
