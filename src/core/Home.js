@@ -116,7 +116,7 @@ function PathForm() {
               <option value="">Select algorithm</option>
               <option value="bellmanford">Bellman-Ford</option>
               <option value="dijkstra">Dijkstra</option>
-              <option value="a*">A*</option>
+              <option value="astar">A*</option>
             </Form.Control>
           </Form.Group>
 
