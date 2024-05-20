@@ -108,11 +108,11 @@ const Map1 = () => {
     if (start && end && userPosition) {
       let apiUrl = '';
       if (algorithm === 'dijkstra') {
-        apiUrl = `http://192.168.49.2:31976/shortest-path?start=${start}&end=${end}`;
+        apiUrl = `http://192.168.49.2:32206/shortest-path?start=${start}&end=${end}`;
       } else if (algorithm === 'bellmanford') {
-        apiUrl = `http://192.168.49.2:31738/shortest-path?start=${start}&end=${end}`;
+        apiUrl = `http://192.168.49.2:30606/shortest-path?start=${start}&end=${end}`;
       } else if (algorithm === 'astar') {
-        apiUrl = `http://192.168.49.2:31363/shortest-path?start=${start}&end=${end}`;
+        apiUrl = `http://192.168.49.2:32263/shortest-path?start=${start}&end=${end}`;
       }
 
       if (apiUrl) {
