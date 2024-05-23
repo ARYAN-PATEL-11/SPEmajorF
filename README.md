@@ -1,70 +1,34 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  # Backend for IIITB Pathfinder - BellmanFord Algorithm
+  
+  ## DevOps Tools Required
+  - Kubectl
+  - Kibana
+  - ElasticSearch
+  - Minikube
+  - Jenkins
+  - Ansible
+  
+  ## Execution
+  - Create a Jenkins pipeline for the same using the GitHub URL of this repository, then you can kubectl command to get the generated services.
+  
+  - From here select the backend-service and  get the URL for the same using minikube ip address and port as shown.
+  <p align="center">
+    <img width="513" alt="Kubectl services" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/minikube.png">
+  </p>
+  
+  - Then one can make requests on the app as shown below.
+  <p align="center">
+    <img width="490" alt="2024-05-21 20_38_00- WARN_COPY MODE  React App - Chromium (Ubuntu-20 04)" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/front%20bellman%20select.png">
+  </p>
+  - Then provide the input and it will show the output by rendering the path in map
+    <p align="center">
+   <img width="473" alt="Path astar" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/front%20bellman%20path.png">
+    </p>
+  - You can also check the jenkins pipeline for the status
+    <p align="center">
+    <img width="513" alt="dashboard" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/bellman%20final%20pipeline.png">
+    </p>
+  - You can also check the log status using elastic search
+    <p align="center">
+    <img width="513" alt="dashboard" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/WhatsApp%20Image%202024-05-23%20at%2011.47.50_ab7077c2.jpg">
+    </p>
