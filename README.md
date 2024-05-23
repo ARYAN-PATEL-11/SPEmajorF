@@ -1,4 +1,4 @@
-  # Backend for IIITB Pathfinder - BellmanFord Algorithm
+  # Frontend for IIITB Pathfinder - 
   
   ## DevOps Tools Required
   - Kubectl
@@ -26,7 +26,7 @@
     </p>
   - You can also check the jenkins pipeline for the status
     <p align="center">
-    <img width="513" alt="dashboard" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/bellman%20final%20pipeline.png">
+    <img width="513" alt="dashboard" src="https://github.com/ARYAN-PATEL-11/bellman/blob/main/asset/front%20pipe.png">
     </p>
   - You can also check the log status using elastic search
     <p align="center">
